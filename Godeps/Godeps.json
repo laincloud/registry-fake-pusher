@@ -1,0 +1,95 @@
+{
+	"ImportPath": "laingit.bdp.cc/panli7/registry-fake-pusher",
+	"GoVersion": "go1.4.2",
+	"Deps": [
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v0.8.7-35-gfe6f2b0",
+			"Rev": "fe6f2b03125e4fcafb21406381010e363a072c80"
+		},
+		{
+			"ImportPath": "github.com/docker/distribution/digest",
+			"Comment": "v2.1.0",
+			"Rev": "9ca7921603852314b18a6ecc19f91806935f34bd"
+		},
+		{
+			"ImportPath": "github.com/docker/distribution/manifest",
+			"Comment": "v2.1.0",
+			"Rev": "9ca7921603852314b18a6ecc19f91806935f34bd"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/image",
+			"Comment": "v1.8.3",
+			"Rev": "f4bf5c7026816785d9f63c07e87f9450a49f2403"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/opts",
+			"Comment": "v1.8.3",
+			"Rev": "f4bf5c7026816785d9f63c07e87f9450a49f2403"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/homedir",
+			"Comment": "v1.8.3",
+			"Rev": "f4bf5c7026816785d9f63c07e87f9450a49f2403"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/mflag",
+			"Comment": "v1.8.3",
+			"Rev": "f4bf5c7026816785d9f63c07e87f9450a49f2403"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/nat",
+			"Comment": "v1.8.3",
+			"Rev": "f4bf5c7026816785d9f63c07e87f9450a49f2403"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/parsers",
+			"Comment": "v1.8.3",
+			"Rev": "f4bf5c7026816785d9f63c07e87f9450a49f2403"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/stringid",
+			"Comment": "v1.8.3",
+			"Rev": "f4bf5c7026816785d9f63c07e87f9450a49f2403"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/tarsum",
+			"Comment": "v1.8.3",
+			"Rev": "f4bf5c7026816785d9f63c07e87f9450a49f2403"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/ulimit",
+			"Comment": "v1.8.3",
+			"Rev": "f4bf5c7026816785d9f63c07e87f9450a49f2403"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/units",
+			"Comment": "v1.8.3",
+			"Rev": "f4bf5c7026816785d9f63c07e87f9450a49f2403"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/version",
+			"Comment": "v1.8.3",
+			"Rev": "f4bf5c7026816785d9f63c07e87f9450a49f2403"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/runconfig",
+			"Comment": "v1.8.3",
+			"Rev": "f4bf5c7026816785d9f63c07e87f9450a49f2403"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/volume",
+			"Comment": "v1.8.3",
+			"Rev": "f4bf5c7026816785d9f63c07e87f9450a49f2403"
+		},
+		{
+			"ImportPath": "github.com/docker/libtrust",
+			"Rev": "9cbd2a1374f46905c68a4eb3694a130610adc62a"
+		},
+		{
+			"ImportPath": "github.com/opencontainers/runc/libcontainer/user",
+			"Comment": "v0.0.5-12-g3317785",
+			"Rev": "3317785f562b363eb386a2fa4909a55f267088c8"
+		}
+	]
+}
