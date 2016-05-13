@@ -1,5 +1,7 @@
 # Registry Fake Pusher
 
+[![MIT license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
+
 ## Usage
 With this tool, if you want to overlay new image layers from one repository tag in Registry on an repository tag in another repository in Registry, you do not need to download all the layers into docker daemon.
 
