@@ -9,11 +9,12 @@ import (
 	"github.com/laincloud/registry-fake-pusher/rfp/utils/log"
 )
 
-// 此版本适配 registry api v2
-// 前提条件：
-//    - srcRepository:sourceTag 已经存在于 sourceRegistry
-//    - targetRepository:targetTag 已经存在于 targetRegistry
-//    - newTag 是一个新的tag
+// Need use registry v2 API
+// Precondition：
+//    - srcRepository:sourceTag already exists in sourceRegistry
+//    - all the imagelayers to be pushed exist in sourceRegistry
+//    - targetRepository:targetTag already exists in targetRegistry
+//    - newTag is a tag not exist in targetRegistry
 func main() {
 
 	var srcRegistry, srcRepository, srcTag, targetRegistry, targetRepository, targetTag, newTag string
