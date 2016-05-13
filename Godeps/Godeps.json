@@ -1,6 +1,7 @@
 {
-	"ImportPath": "laingit.bdp.cc/panli7/registry-fake-pusher",
-	"GoVersion": "go1.4.2",
+	"ImportPath": "github.com/laincloud/registry-fake-pusher",
+	"GoVersion": "go1.6",
+	"GodepVersion": "v66",
 	"Deps": [
 		{
 			"ImportPath": "github.com/Sirupsen/logrus",
