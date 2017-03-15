@@ -31,13 +31,7 @@ func (ic ImageLayerController) GetToOverlayImageLayer(src, target model.ImageLay
 		return newImageLayer, fmt.Errorf("error parse V1Comparivility from target ImageLayer: %s", err)
 	}
 
-	svc.ID = utils.GenerateRandomID()
-	svc.Parent = tvc.ID
-	svc.ContainerConfig.Image = tvc.ID
-	svc.Config = &(tvc.ContainerConfig)
-
-	// TODO: add environment or something else in the config for the image
-	// svc.Config.Env = append(svc.Config.Env, "LAIN_DOMAIN=lain")
+	utils.PatchLayer(svc, tvc)
 
 	jsonData, err := json.Marshal(svc)
 	if err != nil {
