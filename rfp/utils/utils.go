@@ -2,7 +2,6 @@ package utils
 
 import (
 	"fmt"
-	"strings"
 
 	"github.com/docker/distribution/manifest"
 	"github.com/docker/docker/image"
@@ -69,24 +68,7 @@ func MergeConfig(sConfig *runconfig.Config, tConfig *runconfig.Config) {
 		sConfig.WorkingDir = tConfig.WorkingDir
 	}
 
-	if len(sConfig.Env) == 0 {
-		sConfig.Env = tConfig.Env
-	} else {
-		for _, imageEnv := range tConfig.Env {
-			found := false
-			imageEnvKey := strings.Split(imageEnv, "=")[0]
-			for _, userEnv := range sConfig.Env {
-				userEnvKey := strings.Split(userEnv, "=")[0]
-				if imageEnvKey == userEnvKey {
-					found = true
-					break
-				}
-			}
-			if !found {
-				sConfig.Env = append(sConfig.Env, imageEnv)
-			}
-		}
-	}
+	sConfig.Env = tConfig.Env
 
 	if sConfig.Labels == nil {
 		sConfig.Labels = map[string]string{}
